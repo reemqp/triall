@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FixWise — Cart</title>
+  <link rel="stylesheet" href="styl2.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+      <div class="header-logo">
+      <img src="logo.png" alt="FixWise Logo" class="fixwise-logo" />
+      </div>
+  </header>
+
+  <!-- ADJUSTED PART: Wrapped main content in a wider max-width layout to reduce empty space -->
+  <main class="cart-wrapper">
+
+
+    <a href="index.html" class="back-link">&#8249; Back</a>
+
+    <h2 class="cart-title">Your Cart</h2>
+
+    <!-- ADJUSTED PART: Changed to a two-column layout — cart item on the left, order summary on the right -->
+    <div class="cart-layout">
+
+      <!-- LEFT COLUMN: Cart Item Section -->
+      <div class="cart-left">
+
+        <!-- ADJUSTED PART: Cart item card kept but made bigger and more professional -->
+        <div class="cart-items">
+          <img class="cart-item-img" src="laptop.png" alt="laptop repair"/>
+
+          <div class="cart-service-info">
+            <p class="cart-sevice-name">Laptop Repair</p>
+            <p class="cart-service-price">$20.75</p>
+
+            <div class="cart-control-buttons">
+
+              <!-- ADJUSTED PART: Added clear class names (decrease-btn, increase-btn) for JavaScript later -->
+              <div class="control-buttons">
+                <button type="button" class="qty-btn decrease-btn" aria-label="Decrease quantity">&#8722;</button>
+                <span class="qty-value">1</span>
+                <button type="button" class="qty-btn increase-btn" aria-label="Increase quantity">&#43;</button>
+              </div>
+              <!-- ADJUSTED PART: Added a remove button for the item -->
+              <button type="button" class="remove-btn">Remove</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- RIGHT COLUMN: Order Summary Section -->
+      <div class="right-order-summary-section">
+        <div class="cart-summary">
+          <h3 class="section-title">Order Summary</h3>
+
+          <div class="summary-row">
+            <span class="summary-label">Sub Total:</span>
+            <span>$20.75</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Tax:</span>
+            <span>$0.50</span>
+          </div>
+          <!-- ADJUSTED PART: Fixed the broken CSS selector (was .[summary-row.total]) to summary-row total -->
+          <div class="summary-row total">
+            <span>Total:</span>
+            <span>$21.25</span>
+          </div>
+
+          <!-- ADJUSTED PART: Payment section moved here — right column, under Total, before confirm button -->
+          <div class="payment-section">
+            <h3 class="section-title">Payment Method</h3>
+            <div class="payment-options">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="apple-pay" class="payment-radio" />
+                <span class="payment-label">
+                  <span class="payment-icon">&#63743;</span> Apple Pay
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="card" class="payment-radio" checked />
+                <span class="payment-label">
+                  <span class="payment-icon">&#128179;</span> Credit / Debit Card
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="pay-later" class="payment-radio" />
+                <span class="payment-label">
+                  <span class="payment-icon">&#128203;</span> Pay Later When Dropping Off Device
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- ADJUSTED PART: Confirm button now links to con.html -->
+          <a href="confirmation.html" class="btn-book">Confirm and Book Appointment</a>
+
+          <p class="secure-note">your info is safe- FixWise</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ADJUSTED PART: Added a simple footer to complete the page layout -->
+  <footer class="fixwise-footer">
+    <p>&copy; 2025 FixWise. All rights reserved.</p>
+  </footer>
+
+<script src="ca0.js"></script>
+</body>
+</html>
