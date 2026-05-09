@@ -354,7 +354,27 @@ body {
    screens, the layout switches to a single column
    ============================================= */
 
+@media (max-width: 800px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
 
+  .right-order-summary-section {
+    position: static;
+  }
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  .cart-wrapper {
+    padding: 20px 16px 40px;
+  }
+
+  .cart-title {
+    font-size: 22px;
+  }
+}
 
 
 
