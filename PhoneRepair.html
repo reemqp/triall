@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixWise - Phone Repair</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html"><img src="FWlogo.jpg" alt="FixWise Logo" class="header-logo"></a>
+        </div>
+    </header>
+
+    <main class="service-page">
+
+        <header class="back-section">
+            <a href="index.html" class="back-button">&#8249; Back</a>
+
+            <a href="CartPage.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </header>
+
+        <section class="service-card">
+
+            <section class="image-section">
+                <img src="phone.jpg" alt="Phone repair image" class="service-image" id="service-image">
+            </section>
+
+            <section class="details-section">
+                <h1 class="service-title" id="service-name">Phone Repair</h1>
+
+                <p class="service-description">
+                    We offer screen repair, battery repair, and data recovery services
+                    with the highest quality and efficiency.
+                </p>
+            </section>
+
+            <div class="issue-input">
+                <label for="issue-description" class="form-label">Describe your issue</label>
+
+                <input
+                    type="text"
+                    id="issue-description"
+                    placeholder="Write a short description"
+                    class="form-input"
+                    required
+                >
+
+                <span id="issue-description-error" class="error-message"></span>
+            </div>
+
+            <div class="dropdown">
+                <div class="select-field">
+                    <label for="issue-type" class="visually-hidden">Select type of issue</label>
+
+                    <select id="issue-type" name="issue-type" class="form-select">
+                        <option value="" selected disabled>Select type of issue</option>
+                        <option>Screen Replacement</option>
+                        <option>Battery Replacement</option>
+                        <option>Data Recovery</option>
+                    </select>
+
+                    <span id="issue-type-error" class="error-message"></span>
+                </div>
+
+                <div class="quantity-selector" aria-label="Quantity selector">
+                    <button type="button" class="quantity-button" id="decrease-quantity">-</button>
+                    <span class="quantity-value" id="quantity-value">1</span>
+                    <button type="button" class="quantity-button" id="increase-quantity">+</button>
+                </div>
+            </div>
+
+            <footer class="cart-section">
+                <button type="button" class="cart-button" id="cart-button">Add to Cart</button>
+                <p class="price" id="total-price">$20.75</p>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <footer class="fixwise-footer">
+        <p>&copy; 2026 FixWise. All rights reserved.</p>
+    </footer>
+
+    <script src="JavaScript2.js"></script>
+
+</body>
+</html>
