@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FixWise — Cart</title>
+  <link rel="stylesheet" href="styl2.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+      <div class="header-logo">
+      <img src="logo.png" alt="FixWise Logo" class="fixwise-logo" />
+      </div>
+  </header>
+
+  <!-- ADJUSTED PART: Wrapped main content in a wider max-width layout to reduce empty space -->
+  <main class="cart-wrapper">
+
+
+    <a href="CartPage.html" class="back-link">&#8249; Back</a>
+
+    <h2 class="cart-title">Your Cart</h2>
+    <p id="cartMessage" class="cart-message"></p>
+
+    <!-- ADJUSTED PART: Changed to a two-column layout — cart item on the left, order summary on the right -->
+    <div class="cart-layout">
+
+      <!-- LEFT COLUMN: Cart Item Section -->
+      <div class="cart-left" id="cartItemsContainer">
+      </div>
+      
+      <!-- RIGHT COLUMN: Order Summary Section -->
+      <div class="right-order-summary-section">
+        <div class="cart-summary">
+          <h3 class="section-title">Order Summary</h3>
+
+          <div class="summary-row">
+            <span class="summary-label">Sub Total:</span>
+            <span id="subTotal">$00.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span class="summary-label">Tax:</span>
+            <span id="taxAmount">$0.00</span>
+          </div>
+          <!-- ADJUSTED PART: Fixed the broken CSS selector (was .[summary-row.total]) to summary-row total -->
+          <div class="summary-row total">
+            <span>Total:</span>
+            <span id="totalAmount">$00.00</span>
+          </div>
+
+          <!-- ADJUSTED PART: Payment section moved here — right column, under Total, before confirm button -->
+          <div class="payment-section">
+            <h3 class="section-title">Payment Method</h3>
+            <div class="payment-options">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="apple-pay" class="payment-radio" />
+                <span class="payment-label">
+                  <span class="payment-icon">&#63743;</span> Apple Pay
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="card" class="payment-radio" checked />
+                <span class="payment-label">
+                  <span class="payment-icon">&#128179;</span> Credit / Debit Card
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="pay-later" class="payment-radio" />
+                <span class="payment-label">
+                  <span class="payment-icon">&#128203;</span> Pay Later When Dropping Off Device
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- ADJUSTED PART: Confirm button now links to con.html -->
+          <a href="confirmation.html" class="btn-book" id="confirmBtn">Confirm and Book Appointment</a>
+
+          <p class="secure-note">your info is safe- FixWise</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ADJUSTED PART: Added a simple footer to complete the page layout -->
+  <footer class="fixwise-footer">
+    <p>&copy; 2025 FixWise. All rights reserved.</p>
+  </footer>
+
+<script src="ca0.js"></script>
+</body>
+</html>
