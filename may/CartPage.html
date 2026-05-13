@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FixWise — Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="services1.html"><img src="FWlogo.jpg" alt="FixWise Logo" class="header-logo"></a>
+  </div>
+</header>
+
+
+
+  <main class="cart-wrapper">
+
+    <a href="services1.html" class="back-link">&#8249; Services</a>
+
+    <h2 class="cart-title">Your Cart</h2>
+    <p id="cartMessage" class="cart-message"></p>
+    <div class="cart-layout">
+
+
+      <div class="cart-left" id="cartItemsContainer">
+      </div>
+
+
+
+      <div class="right-order-summary-section">
+        <div class="cart-summary">
+
+          <h3 class="section-title">Order Summary</h3>
+
+          <div class="summary-row">
+            <span class="summary-label">Sub Total:</span>
+            <span id="subTotal">$0.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span class="summary-label">Tax (15%):</span>
+            <span id="taxAmount">$0.00</span>
+          </div>
+
+          <div class="summary-row total">
+            <span>Total:</span>
+            <span id="totalAmount">$0.00</span>
+          </div>
+
+          <div class="payment-section">
+            <h3 class="section-title">Payment Method</h3>
+            <div class="payment-options">
+
+              <label class="payment-option">
+                <input type="radio" name="payment" value="apple-pay" class="payment-radio" />
+                <span class="payment-label">
+                  <span class="payment-icon">&#63743;</span> Apple Pay
+                </span>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="payment" value="card" class="payment-radio" checked />
+                <span class="payment-label">
+                  <span class="payment-icon">&#128179;</span> Credit / Debit Card
+                </span>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="payment" value="pay-later" class="payment-radio" />
+                <span class="payment-label">
+                  <span class="payment-icon">&#128203;</span> Pay Later When Dropping Off Device
+                </span>
+              </label>
+
+            </div>
+          </div>
+
+          <a href="confirmation.html" class="btn-book" id="confirmBtn">Confirm and Book Appointment</a>
+
+          <p class="secure-note">Your info is safe — FixWise</p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="fixwise-footer">
+    <p>&copy; 2025 FixWise. All rights reserved.</p>
+  </footer>
+
+  <script src="JS2.js"></script>
+</body>
+</html>
